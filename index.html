@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Sabor — Sua Cafeteria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">☕ Café & Sabor</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#pedido">Fazer Pedido</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>O Melhor Café da Cidade</h1>
+            <p>Sabor, qualidade e carinho em cada xícara. Peça pelo app e receba onde estiver!</p>
+            <a href="#cardapio" class="btn btn-primary">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <section class="destaques">
+        <h2>Por que escolher a gente?</h2>
+        <div class="destaques-grid">
+            <div class="destaque-card">
+                <i class="fas fa-mug-hot"></i>
+                <h3>Café Especial</h3>
+                <p>Grãos selecionados e torrados na hora</p>
+            </div>
+            <div class="destaque-card">
+                <i class="fas fa-truck"></i>
+                <h3>Entrega Rápida</h3>
+                <p>Seu pedido em minutos</p>
+            </div>
+            <div class="destaque-card">
+                <i class="fas fa-percent"></i>
+                <h3>Promoções</h3>
+                <p>Descontos exclusivos pelo app</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cardapio" class="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <div class="produtos-grid" id="produtosGrid">
+        </div>
+    </section>
+
+    <div class="carrinho-modal" id="carrinhoModal">
+        <div class="carrinho-content">
+            <button class="fechar-carrinho" id="fecharCarrinho">&times;</button>
+            <h3>Seu Pedido</h3>
+            <div id="carrinhoItens"></div>
+            <div class="carrinho-total">
+                <strong>Total: R$ <span id="valorTotal">0,00</span></strong>
+            </div>
+            <button class="btn btn-success" id="finalizarPedido">Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma cafeteria apaixonada por qualidade e atendimento. Combinamos tecnologia para agilidade com atendimento humano para você sempre se sentir em casa.</p>
+    </section>
+
+    <section class="faq">
+        <h2>Dúvidas Frequentes</h2>
+        <div class="faq-item">
+            <button class="faq-pergunta">Qual o horário de funcionamento?</button>
+            <div class="faq-resposta">Segunda a Sábado: 7h às 20h | Domingo: 8h às 14h</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-pergunta">Posso pedir pelo aplicativo?</button>
+            <div class="faq-resposta">Sim! Faça o pedido aqui no site ou pelo app, é rápido e prático.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-pergunta">Tem atendimento presencial?</button>
+            <div class="faq-resposta">Claro! Venha nos visitar, temos espaço aconchegante e equipe pronta para te receber.</div>
+        </div>
+    </section>
+
+    <footer id="contato" class="rodape">
+        <div class="rodape-grid">
+            <div>
+                <h3>☕ Café & Sabor</h3>
+                <p>Rua das Flores, 123 — Curitiba/PR</p>
+                <p>(41) 99999-0000</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <a href="#inicio">Início</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#sobre">Sobre</a>
+            </div>
+            <div>
+                <h4>Redes Sociais</h4>
+                <a href="#"><i class="fab fa-instagram"></i> @cafeesabor</a>
+                <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Café & Sabor — Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
